@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Симулятор фермы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="ui-panel">
+  <div class="ui-section">
+    <h1>Симулятор Фермы</h1>
+  </div>
+
+  <div class="ui-section">
+    <h3>Инструменты:</h3>
+    <button id="tool-shovel" class="tool selected" data-tool="shovel">Лопата (Собрать/Выкопать)</button>
+    <button id="tool-water" class="tool" data-tool="waterBucket">Ведро (налить)</button>
+    <button id="tool-empty" class="tool" data-tool="emptyBucket">Ведро (собрать)</button>
+  </div>
+
+  <div class="ui-section">
+    <h3>Семена:</h3>
+    <button id="tool-potato" class="tool" data-tool="potatoSeed">Картошка</button>
+    <button id="tool-cactus" class="tool" data-tool="cactusSeed">Кактус</button>
+    <button id="tool-swamper" class="tool" data-tool="swamperSeed">Болотник</button>
+  </div>
+
+  <div id="harvest-counter" class="ui-section">
+    <h3>Собрано:</h3>
+  </div>
+
+  <div class="ui-section">
+    <button id="mute-toggle">Музыка</button>
+  </div>
+</div>
+
+<div id="game-world">
+  <div id="game-grid"></div>
+</div>
+
+<audio id="bg-music" src="music/background-music.mp3" loop></audio>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
