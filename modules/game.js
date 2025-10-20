@@ -111,7 +111,6 @@ export class Game {
   replaceCell(x, y, newCell) {
     const oldCell = this.getCell(x, y);
 
-    // --- ИСПРАВЛЕННАЯ ЛОГИКА ЗАМЕНЫ ЭЛЕМЕНТА В DOM ---
     // Получаем индекс старого элемента среди всех детей сетки
     const oldIndex = y * this.width + x;
     const nextElement = this.gridElement.children[oldIndex + 1];
@@ -124,7 +123,6 @@ export class Game {
     // Вставляем новый DOM-элемент на место старого
     // Используем nextElement как reference, чтобы вставить новый элемент ПЕРЕД ним
     this.gridElement.insertBefore(newCell.domElement, nextElement);
-    // ----------------------------------------------------
 
     this.updateAllHumidity();
   }
