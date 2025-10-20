@@ -73,4 +73,4 @@
 * **Абстракция Растения:** Любой объект `Cell` может взаимодействовать с `this.plant`, используя общий интерфейс (`plant.grow()`, `plant.die()`), независимо от того, является ли это `Potato` или `Cactus`.
 
 ---
-
+**https://vladislavexpensive.github.io/-Farm/**
